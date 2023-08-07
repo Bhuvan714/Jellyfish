@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="favicon (2).ico" type="image/x-icon"/>
+        <title>Jellyfish</title>
+        <style>
+            #bar{
+                display:inline;
+                margin-right:40px;
+            }
+            a{
+                text-decoration-line:none;
+                color:white;
+            }
+            nav{
+                height:30px;
+                background-color:navy;
+            }
+            div{
+                height:150px;
+                width:150px;
+                border:3px solid black;
+                border-radius: 100;
+                position: relative;
+            }
+            #pred{
+                background-color:red;
+                animation-name:hunt;
+                animation-duration:10s;
+                animation-iteration-count: infinite;
+                z-index:3;
+            }
+            #prey{
+                background-color:blue;
+                animation-name:flee;
+                animation-duration:10s;
+                animation-iteration-count: infinite;
+                margin-top:-150px;
+                z-index:1;
+            }
+            #main{
+                background-color:green;
+                animation-name:mid;
+                animation-duration:10s;
+                animation-iteration-count: infinite; 
+                margin-top:-200px;
+                z-index:2;
+                font-size:50px;
+            }
+            h1,p,h3{
+                text-align: center;
+            }
+            p{
+                margin-top:0px;
+            }
+            @keyframes hunt{
+                0%{
+                    top:100;
+                    left:25;
+                }
+                10%{
+                    top:350;
+                    left:300;
+                }
+                20%{
+                    top:100;
+                    left:500;
+                }
+                30%{
+                    top:350;
+                    left:650;
+                }
+                40%{
+                    top:100;
+                    left:800;
+                }
+                50%{
+                    top:350;
+                    left:1000;
+                }
+                90%{
+                    top:250;
+                    left:50;
+                }
+                100%{
+                    top:100;
+                    left:25;
+                }
+            }
+            @keyframes flee{
+                60%{
+                    top:350;
+                    left:300;
+                }
+                70%{
+                    top:100;
+                    left:500;
+                }
+                80%{
+                    top:350;
+                    left:650;
+                }
+                90%{
+                    top:100;
+                    left:800;
+                }
+                100%{
+                    top:350;
+                    left:1000;
+                }
+                0%{
+                    top:350;
+                    left:1000;
+                }
+                40%{
+                    top:250;
+                    left:50;
+                }
+                50%{
+                    top:100;
+                    left:25;
+                }
+            }
+            @keyframes mid{
+                90%{
+                    top:350;
+                    left:300;
+                }
+                100%{
+                    top:100;
+                    left:500;
+                }
+                0%{
+                    top:100;
+                    left:500;
+                }
+                10%{
+                    top:350;
+                    left:650;
+                }
+                20%{
+                    top:100;
+                    left:800;
+                }
+                30%{
+                    top:350;
+                    left:1000;
+                }
+                70%{
+                    top:250;
+                    left:50;
+                }
+                80%{
+                    top:100;
+                    left:25;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li id="bar"><a href="index.html">Home</a></li>
+                <li id="bar"><a href="body.html">Body</a></li>
+                <li id="bar"><a href="organ.html">Organ</a></li>
+                <li id="bar"><a href="stinger.html">Stingers</a></li>
+                <li id="bar"><a href="anatomy.html">Anatomy</a></li>
+                <li id="bar"><a href="prey-pred.html">Food Chain</a></li>
+                <li id="bar"><a href="behavior.html">Behavior</a></li>
+                <li id="bar"><a href="location.html">Location</a></li>
+                <li id="bar"><a href="lifecycle.html">Life Cycle</a></li>
+                <li id="bar"><a href="species.html">Species</a></li>
+            </ul>
+        </nav>
+        <h1>Food Chain</h1>
+        <!--text missing in all divs-->
+        <div id="pred">
+            <h3>Predators</h3>
+            <ul>
+                <li>Sharks</li>
+                <li>Tuna</li>
+                <li>Turtles</li>
+                <li>Sunfish</li>
+                <li>Swordfish</li>
+            </ul>
+        </div>
+        <div id="prey">
+            <h3>Prey</h3>
+            <ul>
+                <li>Plankton</li>
+                <li>Crustaceans</li>
+                <li>Small Fish</li>
+                <li>Jellyfish</li>
+            </ul>
+        </div>
+        <div id="main">
+            <p>
+            Jelly<br>
+            Fish
+            </p>
+        </div>
+    </body>
+</html>
